@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button   button;
     TextView textView,textView1;
-    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +20,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button   = (Button)   findViewById(R.id.button);
-        textView = (TextView) findViewById(R.id.textViewforgor);
-        textView1= (TextView) findViewById(R.id.create);
-        imageView= (ImageView)findViewById(R.id.imageView);
+        textView = (TextView) findViewById(R.id.forgot);
+        textView1= (TextView) findViewById(R.id.createAcc);
 
-        imageView.getBackground().setAlpha(1);
 
 
         textView1.setOnClickListener(new View.OnClickListener() {

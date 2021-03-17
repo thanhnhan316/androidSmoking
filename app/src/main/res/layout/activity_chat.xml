@@ -6,39 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Chat"
-    android:background="@drawable/troi">
-
+    android:background="@drawable/bacground_home">
 
     <ImageView
-        android:outlineSpotShadowColor="@color/black"
-        android:id="@+id/imageView"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
+        android:id="@+id/image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/back" />
 
     <TextView
+        android:textColor="#E2FFFFFF"
         android:id="@+id/textview"
         android:text="Chat"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="30dp"
-        android:layout_toEndOf="@+id/imageView" />
+        android:layout_margin="20dp"
+        android:layout_toEndOf="@+id/image" />
     <TextView
         android:gravity="right"
+        android:textColor="#E2FFFFFF"
         android:id="@+id/textview1"
-        android:background="@drawable/bogocchat"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
-        android:paddingLeft="20dp"
-        android:paddingEnd="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="25dp"
+        android:background="@drawable/dentrong"
+        android:padding="12dp"
+        android:layout_margin="25dp"
         android:layout_below="@+id/textview"
         android:layout_alignParentRight="true"
         android:text="Hello\n16h20 13/4"
@@ -48,13 +41,9 @@
     </TextView>
     <TextView
         android:gravity="left"
-        android:background="@drawable/bogoc_chat"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
-        android:paddingLeft="20dp"
-        android:paddingEnd="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="25dp"
+        android:background="@drawable/trangtrong"
+        android:padding="12dp"
+        android:layout_margin="25dp"
         android:layout_below="@+id/textview1"
         android:layout_alignParentLeft="true"
         android:text="How are you \n17h00 13/4"
@@ -62,16 +51,14 @@
         android:layout_height="wrap_content"
         />
     <LinearLayout
-        android:background="#1A7DDF"
+        android:background="@drawable/trangtrongchat"
         android:padding="6dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:layout_gravity="center"
             android:gravity="center"
-            android:background="@drawable/bogocchat"
             android:textColor="@color/white"
             android:layout_weight="8"
             android:text="Type message..."

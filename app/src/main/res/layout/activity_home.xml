@@ -1,171 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_height="match_parent"
-            android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Achievement"
+    android:background="@drawable/bacground_home"
+    android:padding="5dp"
     android:orientation="vertical"
-    >
+    android:weightSum="10">
 
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_weight="2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"
-        android:padding="10dp"
-        android:src="@drawable/lich2" />
+        android:src="@drawable/no_smoking" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:textColor="#f00"
-        android:textStyle="bold"
-        android:layout_gravity="center"
+        android:textSize="33dp"
+        android:textColor="#E2FFFFFF"
+        android:gravity="center"
         android:text="Smoking Control App"
-        android:padding="5dp" />
-    <LinearLayout
-        android:layout_margin="15dp"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_marginBottom="10dp"
+       />
         <LinearLayout
+            android:paddingLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
             android:gravity="center"
-            android:layout_weight="2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_weight="1"
-                android:layout_marginEnd="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/backgroundimg"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:id="@+id/image1"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_gravity="center"
-                        android:background="@drawable/radiusss"
-                        android:src="@drawable/writing" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:text="Add target"
-                        android:textColor="#f00" />
-                </LinearLayout>
-                <LinearLayout
-                    android:paddingStart="20dp"
-                    android:paddingEnd="20dp"
-                    android:gravity="center"
-                    android:padding="10dp"
-                    android:background="@drawable/backgroundimg"
-                    android:layout_marginEnd="15dp"
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:id="@+id/image3"
-                        android:background = "@drawable/radiusss"
-                        android:layout_gravity="center"
-                        android:src="@drawable/chat"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"/>
-                    <TextView
-                        android:textColor="#f00"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Chat"/>
-                </LinearLayout>
-
-
-            </LinearLayout>
-            <LinearLayout
+                android:padding="2dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:paddingEnd="20dp"
-                    android:paddingStart="20dp"
-                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/dentrong"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/backgroundimg"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:layout_marginBottom="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/muc_tieu" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Add target"
+                        android:textColor="#F3DD1F"
+                        android:textSize="18dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/dentrong"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/chat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Chat"
+                        android:textColor="#F3DD1F"
+                        android:textSize="18dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/dentrong"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp"
+                    >
                     <ImageView
                         android:id="@+id/image2"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/radiusss"
-                        android:src="@drawable/tv" />
+                        android:src="@drawable/thanh_tich" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Achievement"
-                        android:textColor="#f00" />
+                        android:textColor="#F3DD1F"
+                        android:textSize="18dp"/>
                 </LinearLayout>
                 <LinearLayout
-                    android:paddingEnd="20dp"
-                    android:paddingStart="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/dentrong"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:padding="10dp"
-                    android:background="@drawable/backgroundimg"
-
-                    android:orientation="vertical"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     >
                     <ImageView
                         android:id="@+id/image4"
-                        android:background = "@drawable/radiusss"
+                        android:layout_width="80dp"
+                        android:layout_height="100dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/user"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"/>
+                        android:src="@drawable/profile" />
+
                     <TextView
-                        android:textColor="#f00"
-                        android:layout_gravity="center"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User"/>
+                        android:layout_gravity="center"
+                        android:text="User"
+                        android:textColor="#F3DD1F"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
+    <TextView
+        android:textColor="#F3DD1F"
+        android:text="Notifacation:"
+        android:textSize="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
         android:layout_weight="2"
-        android:background="@drawable/background"
+        android:background="@drawable/bogoc"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -178,79 +179,77 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="5dp"
                 android:paddingBottom="3dp"
                 android:text="Target name: 2 Week"
                 android:textColor="@color/black"
-                android:textSize="16dp" />
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="5dp"
                 android:paddingBottom="3dp"
                 android:text="Start date: 27/02/21"
                 android:textColor="@color/black"
-                android:textSize="16dp" />
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="5dp"
                 android:paddingBottom="3dp"
                 android:text="End date: 13/03/21"
                 android:textColor="@color/black"
-                android:textSize="16dp" />
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="5dp"
                 android:paddingBottom="3dp"
                 android:text="Count of Target: 30 "
                 android:textColor="@color/black"
-                android:textSize="16dp" />
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="5dp"
                 android:paddingBottom="3dp"
                 android:text="User: 2"
                 android:textColor="@color/black"
-                android:textSize="16dp" />
+                android:textSize="14dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@drawable/backgoundblack">
+            android:background="@drawable/dendamtrong">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="you near go to complete the target"
+                android:text="you near go to\ncomplete the target"
                 android:textColor="#D6B831"
-                android:textSize="17dp" />
+                android:textSize="14dp" />
         </LinearLayout>
 
     </LinearLayout>
     <Button
-        android:background = "@drawable/background"
         android:id="@+id/button"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
         android:padding="3dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BACK TO SIGN IN"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp" />
+        android:background="@drawable/dentrong"
+         />
 
 
 
 
 </LinearLayout>
-</ScrollView>
+
+

@@ -15,7 +15,7 @@ public class Achievement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_achievement);
 
-        imageView =  (ImageView) findViewById(R.id.imageView);
+        imageView =  (ImageView) findViewById(R.id.image);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -15,7 +15,7 @@ public class User extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
 
-        imageView = (ImageView)  findViewById(R.id.image1);
+        imageView = (ImageView)  findViewById(R.id.image);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
