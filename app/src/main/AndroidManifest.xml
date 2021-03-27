@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BtAndroid">
-        <activity android:name=".Chat"></activity>
-        <activity android:name=".Add_Target" />
-        <activity android:name=".User" />
-        <activity android:name=".Achievement" />
-        <activity android:name=".For_Got_Password" />
-        <activity android:name=".Sing_Up" />
-        <activity android:name=".Home" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.Chat"></activity>
+        <activity android:name=".view.Add_Target" />
+        <activity android:name=".view.User" />
+        <activity android:name=".view.Achievement" />
+        <activity android:name=".view.For_Got_Password" />
+        <activity android:name=".view.Sing_Up" />
+        <activity android:name=".view.Home" />
+        <activity android:name=".view.login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

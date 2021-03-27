@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "450472595541",
+    "project_id": "smokingapp-29020",
+    "storage_bucket": "smokingapp-29020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450472595541:android:006b7b450ae494199544dc",
+        "android_client_info": {
+          "package_name": "com.example.btandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450472595541-0f3q0es7j0u17g78tsa2eso9ks711f2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFPESmMj1xToezu39CRnW3eIq_qnIO_rc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450472595541-0f3q0es7j0u17g78tsa2eso9ks711f2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="25dp"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".view.login"
+    >
 
     <ImageView
         android:layout_gravity="center"
@@ -15,26 +16,26 @@
         android:layout_height="150dp"
         android:src="@drawable/no_smoking"/>
     <TextView
-        android:text="USERNAME"
+        android:text="EMAIL"
         android:textSize="17dp"
         android:layout_marginTop="5dp"
         android:textColor="#F3DD1F"
-        android:layout_marginStart="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp" />
+        />
 
     <EditText
+        android:id="@+id/edname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
         android:backgroundTint="@color/white"
         android:paddingTop="25dp"
         android:paddingBottom="15dp"
-        android:text="username"
+        android:hint="Email"
         android:textColor="@color/white"
         android:textSize="22dp"
+        android:textColorHint="#E2FFFFFF"
+        android:inputType="text"
         />
 
     <TextView
@@ -42,22 +43,22 @@
         android:textSize="17dp"
         android:layout_marginTop="5dp"
         android:textColor="#F3DD1F"
-        android:layout_marginStart="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp" />
+         />
 
     <EditText
+        android:id="@+id/edpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
         android:backgroundTint="@color/white"
         android:paddingTop="25dp"
         android:paddingBottom="15dp"
-        android:text="password"
+        android:hint="password"
         android:textColor="@color/white"
         android:textSize="22dp"
+        android:textColorHint="#E2FFFFFF"
+        android:inputType="textPassword"
         />
     <TextView
         android:id="@+id/forgot"
@@ -73,8 +74,6 @@
         android:id="@+id/button"
         android:text="GET STARTING"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="22dp"
-        android:layout_marginLeft="22dp"
         android:background="@drawable/bogoc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -85,8 +84,6 @@
         android:paddingBottom="25dp"
         android:text="Not registered? Create Account"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
         android:gravity="center"
         android:textSize="17dp"
         android:textColor="@color/white"

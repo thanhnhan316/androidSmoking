@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Chat"
+    tools:context=".view.Chat"
     android:background="@drawable/bacground_home">
 
     <ImageView
@@ -63,7 +63,8 @@
             android:layout_weight="8"
             android:text="Type message..."
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0C4C5053"/>
         <ImageView
             android:src="@android:drawable/ic_menu_send"
             android:layout_weight="2"

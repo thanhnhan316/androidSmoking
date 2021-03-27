@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sing_Up"
+    tools:context=".view.Sing_Up"
     android:orientation="vertical"
     android:background="@drawable/background"
     android:padding="25dp">
@@ -39,12 +39,16 @@
         />
 
     <EditText
+        android:id="@+id/edname"
         android:textSize="25dp"
-        android:text="username"
+        android:hint="username"
+        android:inputType="text"
         android:textColor="#E2FFFFFF"
+        android:textColorHint="#E2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
+        android:backgroundTint="@color/white"
          />
     <TextView
         android:layout_width="wrap_content"
@@ -56,12 +60,17 @@
        />
 
     <EditText
+        android:id="@+id/edemail"
+        android:inputType="text"
         android:textSize="25dp"
-        android:text="email"
+        android:hint="email"
+        android:textColorHint="#E2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:textColor="#E2FFFFFF"/>
+        android:textColor="#E2FFFFFF"
+        android:backgroundTint="@color/white"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,12 +81,16 @@
         />
 
     <EditText
+        android:id="@+id/edpassword"
+        android:inputType="text"
         android:textSize="25dp"
-        android:text="password"
+        android:hint="password"
+        android:textColorHint="#E2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:textColor="#E2FFFFFF"/>
+        android:textColor="#E2FFFFFF"
+        android:backgroundTint="@color/white"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,12 +101,16 @@
         />
 
     <EditText
+        android:id="@+id/edphone"
+        android:inputType="phone"
         android:textSize="25dp"
-        android:text="phone number"
+        android:hint="phone number"
+        android:textColorHint="#E2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:textColor="#E2FFFFFF"/>
+        android:textColor="#E2FFFFFF"
+        android:backgroundTint="@color/white"/>
     <Button
         android:textColor="#D3161C22"
         android:id="@+id/button"
@@ -106,6 +123,7 @@
         />
 
     <TextView
+        android:id="@+id/textview"
         android:layout_gravity="center"
         android:textSize="15dp"
         android:textColor="#E2FFFFFF"

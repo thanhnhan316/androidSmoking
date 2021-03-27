@@ -28,13 +28,16 @@
             />
     </LinearLayout>
 
-    <TextView
+    <EditText
+        android:id="@+id/edTargetYou"
         android:padding="10dp"
         android:gravity="center"
         android:textSize="22dp"
+        android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="--Choose your target--"
+        android:hint="--Choose your target--"
+        android:textColorHint="@color/white"
         android:background="@drawable/dentrong"
         android:textColor="#E2FFFFFF"/>
     <TextView
@@ -47,14 +50,17 @@
         android:layout_marginTop="12dp"
         />
     <EditText
+        android:id="@+id/edStart"
         android:padding="10dp"
         android:gravity="center"
         android:textSize="22dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="01/01/2021"
+        android:hint="01/01/2021"
+        android:textColorHint="@color/white"
         android:background="@drawable/dentrong"
-        android:textColor="#E2FFFFFF"/>
+        android:textColor="#E2FFFFFF"
+        android:inputType="text"/>
     <TextView
         android:textColor="#FFB300"
         android:gravity="left"
@@ -65,13 +71,15 @@
         android:layout_marginTop="12dp"
         />
     <EditText
+        android:id="@+id/edEnd"
         android:padding="10dp"
         android:gravity="center"
         android:textSize="22dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/dentrong"
-        android:textColor="#E2FFFFFF"/>
+        android:textColor="#E2FFFFFF"
+        android:inputType="text"/>
     <TextView
         android:textColor="#FFB300"
         android:gravity="left"
@@ -82,15 +90,17 @@
         android:layout_marginTop="12dp"
         />
     <EditText
+        android:id="@+id/edCount"
         android:padding="10dp"
         android:gravity="center"
         android:textSize="22dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/dentrong"
-        android:textColor="#E2FFFFFF"/>
+        android:textColor="#E2FFFFFF"
+        android:inputType="text"/>
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btSumit"
         android:background="@drawable/bogoc"
         android:padding="12dp"
         android:textColor="#D3161C22"
