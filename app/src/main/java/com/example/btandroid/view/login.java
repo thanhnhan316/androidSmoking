@@ -62,7 +62,7 @@ public class login extends AppCompatActivity {
                 String password = edpassword.getText().toString().trim();
 
                 if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)){
-                    Toast.makeText(login.this,"Invalid information",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(login.this,"Thông tin chưa đầy đủ",Toast.LENGTH_SHORT).show();
                 }else{
                     loginUesr(email, password);
                 }
@@ -75,6 +75,7 @@ public class login extends AppCompatActivity {
         auth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
+                Toast.makeText(login.this,"Đăng nhập thành công",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(login.this,Home.class));
                 finish();
             }
@@ -88,5 +89,10 @@ public class login extends AppCompatActivity {
         edname     = findViewById(R.id.edname);
         edpassword = findViewById(R.id.edpassword);
         auth       = FirebaseAuth.getInstance();
+    }
+
+    //LogIn userUID
+    public String userUID(){
+        return auth.getUid();
     }
 }

@@ -22,6 +22,7 @@ public class Add_Target extends AppCompatActivity {
     Button    button;
     ImageView imageView;
     EditText edYouTarget,edStartDay,edEndDate,edCount;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +57,8 @@ public class Add_Target extends AppCompatActivity {
                String EndDate   = edEndDate.getText().toString().trim();
                String Count     = edCount.getText().toString().trim();
 
+               String targetUID = auth.getUid();
+
                if(target.isEmpty() || StartDate.isEmpty() || EndDate.isEmpty() || Count.isEmpty()){
                    Toast.makeText(Add_Target.this,"lack of information",Toast.LENGTH_SHORT).show();
                }else{
@@ -64,9 +67,12 @@ public class Add_Target extends AppCompatActivity {
                    map.put("End Date",EndDate);
                    map.put("Start Date",StartDate);
                    map.put("Target",target);
-                   FirebaseDatabase.getInstance().getReference().child("Add_Target").push().setValue(map);
-                   FirebaseAuth.getInstance().signOut();
+                   //Them muc tieu cho user
+//                 FirebaseDatabase.getInstance().getReference().child("User").child(new login().userUID()).child("Target :").child(targetUID).updateChildren(map);
+                   FirebaseDatabase.getInstance().getReference().child(new login().userUID()).child("Target: ").child(targetUID).setValue(map);
+
                    Toast.makeText(Add_Target.this,"success",Toast.LENGTH_SHORT).show();
+                   finish();
                }
             }
         });

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="SignViewModel"
+            type="com.example.btandroid.viewModel.UserViewModel" />
+    </data>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -42,6 +48,7 @@
         android:id="@+id/edname"
         android:textSize="25dp"
         android:hint="username"
+        android:text="@={SignViewModel.name}"
         android:inputType="text"
         android:textColor="#E2FFFFFF"
         android:textColorHint="#E2FFFFFF"
@@ -64,6 +71,7 @@
         android:inputType="text"
         android:textSize="25dp"
         android:hint="email"
+        android:text="@={SignViewModel.email}"
         android:textColorHint="#E2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,9 +90,10 @@
 
     <EditText
         android:id="@+id/edpassword"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:textSize="25dp"
         android:hint="password"
+        android:text="@={SignViewModel.password}"
         android:textColorHint="#E2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,6 +114,7 @@
         android:inputType="phone"
         android:textSize="25dp"
         android:hint="phone number"
+        android:text="@={SignViewModel.phone}"
         android:textColorHint="#E2FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -117,6 +127,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:onClick="@{(v)-> SignViewModel.onClick(v)}"
         android:background="@drawable/bogoc"
         android:text="NEXT"
         android:textSize="20dp"
@@ -135,3 +146,4 @@
 
 
 </LinearLayout>
+</layout>
